@@ -39,4 +39,6 @@ class MainActivity : AppCompatActivity() {
 }
 
     fun Calcular(){
+        //xfg
+        var hola = "ysj"
     }
