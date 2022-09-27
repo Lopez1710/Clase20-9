@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var rb_Multiplicacion:RadioButton
     lateinit var rb_Divicion:RadioButton
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -75,6 +76,12 @@ class MainActivity : AppCompatActivity() {
         val miClaseInterna = miClaseAnidadayInterna().miClaseInterna().suma2(5)
 
         println("el resultado de la suma es $miClaseInterna")
+    }
+
+    fun btn_Siguente(Vista:View) {
+
+        val ventanaSiguente:Intent = Intent(applicationContext,listViewApp::class.java)
+        startActivity(ventanaSiguente)
     }
 }
 
